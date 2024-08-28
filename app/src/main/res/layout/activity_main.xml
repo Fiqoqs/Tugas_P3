@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_alignParentTop="true">
+
+        <!-- Tombol Back -->
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="borderless"
+            android:src="@drawable/back"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <!-- Teks Judul -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/judul"
+            android:textColor="#FFD700"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="80dp"
+            android:layout_toEndOf="@id/btn_back" />
+
+        <!-- Tombol Tiga Titik -->
+        <ImageButton
+            android:id="@+id/btn_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="Borderless"
+            android:src="@drawable/list"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+    <!-- Album Art ImageView -->
+    <ImageView
+        android:id="@+id/album_art"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/album" />
+
+    <View
+        android:id="@+id/slider_track"
+        android:layout_width="300dp"
+        android:layout_height="5dp"
+        android:layout_centerInParent="true"
+        android:background="#FFD700" />
+
+    <!-- Circular Thumb -->
+    <ImageView
+        android:id="@+id/dot"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@id/slider_track"
+        android:src="@drawable/oval"
+        android:layout_marginTop="40dp" />
+
+    <!-- Artist Name TextView -->
+    <TextView
+        android:id="@+id/artist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/band"
+        android:textColor="#FFA500"
+        android:textSize="18sp"
+        android:layout_below="@id/dot"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <!-- Song Title TextView -->
+    <TextView
+        android:id="@+id/song_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/judul"
+        android:textColor="#FFD700"
+        android:textSize="18sp"
+        android:layout_below="@id/artist_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+
+    <!-- Music Control Buttons -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/song_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp">
+
+        <ImageButton
+            android:id="@+id/previous_button"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/previous"
+            android:layout_alignParentStart="true"/>
+
+        <ImageButton
+            android:id="@+id/play_button"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/play"
+            android:layout_toEndOf="@id/previous_button"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp" />
+
+        <ImageButton
+            android:id="@+id/next_button"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/next"
+            android:layout_toEndOf="@id/play_button" />
+    </RelativeLayout>
+</RelativeLayout>

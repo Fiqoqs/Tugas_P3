@@ -1,0 +1,13 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Fill color for the thumb -->
+    <solid android:color="#FF00FF" />
+
+    <!-- Outline for the thumb -->
+    <stroke android:width="55dp" android:color="#DCDCDC" /> <!-- Increased Outline width -->
+
+    <!-- Size of the thumb -->
+    <size android:width="200dp" android:height="200dp" /> <!-- Increased size of the thumb -->
+</shape>
+
